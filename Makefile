@@ -5,10 +5,10 @@ ALL = hello
 all: $(ALL)
 
 engine: engine.cpp Makefile
-    $(CXX) $(CXXFLAGS) -o $@ $@.cpp
+	$(CXX) $(CXXFLAGS) -o $@ $@.cpp
 
 clean:
-    $(RM) $(ALL) *.o
+	$(RM) $(ALL) *.o
 
 test: all
-    bash test
+	bash test
